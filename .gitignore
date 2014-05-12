@@ -1,4 +1,5 @@
 assets/*
+idea/*
 !assets/.gitignore
 protected/runtime/*
 !protected/runtime/.gitignore
