@@ -35,19 +35,13 @@
         <div class="col-md-3">
             <ul class="nav nav-pills nav-stacked">
                 <li>
-                    <a href="/admin/news/index">Новости</a>
+                    <a href="/admin/countries/index">Страны</a>
                 </li>
                 <li>
-                    <a href="/admin/newsCategories/index">Категории новостей</a>
+                    <a href="/admin/cities/index">Города</a>
                 </li>
                 <li>
-                    <a href="/admin/pages/index">Страницы</a>
-                </li>
-                <li>
-                    <a href="/admin/clients/index">Клиенты</a>
-                </li>
-                <li>
-                    <a href="/admin/mainSliderImages/index">Главный слайдер</a>
+                    <a href="/admin/attractions/index">Достопримечательности</a>
                 </li>
             </ul>
         </div>

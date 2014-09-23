@@ -9,12 +9,16 @@ return array(
         'application.models.*',
     ),
     'modules' => array(
+        "main",
         "admin",
     ),
     "preload" => array(),
     "components"    => array(
         'urlManager'    =>array(
             'urlFormat'     =>'path',
+            'rules'=>array(
+                '/city/<cityAlias>'                           => 'main/cities/cityDetails',
+            ),
         ),
         'db' => array(
             'connectionString'      => 'mysql:host=localhost;dbname=travel',

@@ -1,0 +1,47 @@
+body{
+    background: #a2adb0;
+}
+
+body>.container{
+    background: #fff;
+    padding: 0;
+    margin: 40px auto;
+    border-radius: 4px;
+}
+
+header.navbar{
+    height: 70px;
+    min-height: 70px;
+}
+header.navbar .navbar-nav>li>a{
+    line-height: 40px;
+    color: #848e92;
+}
+
+.navbar{
+    border: none;
+    margin: 0;
+}
+
+.navbar-inverse{
+    height: 90px;
+    min-height: 90px;
+    background: #2c353a;
+    border: none;
+    border-radius: 0;
+    margin: 0;
+}
+.navbar-inverse .navbar-nav>li>a{
+    line-height: 60px;
+    color: #848e92;
+}
+.navbar-inverse .navbar-nav>li>a:hover{
+    color: #fff !important;
+}
+
+.row{
+    margin: 0;
+}
+.sidebar{
+    background: #edf1f2;
+}

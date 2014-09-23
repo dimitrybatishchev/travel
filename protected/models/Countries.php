@@ -11,7 +11,7 @@ class Countries extends CActiveRecord {
 
     public function tableName()
     {
-        return "countires";
+        return "countries";
     }
 
     public function primaryKey()
@@ -22,7 +22,7 @@ class Countries extends CActiveRecord {
     public function rules()
     {
         return array(
-
+            array('name', 'required'),
         );
     }
 
