@@ -1,5 +1,12 @@
 body{
-    background: #a2adb0;
+    background: #405f6f; /* Old browsers */
+    background: -moz-linear-gradient(45deg,  #405f6f 0%, #b6bbb8 50%, #c7b9aa 76%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#405f6f), color-stop(50%,#b6bbb8), color-stop(76%,#c7b9aa)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg,  #405f6f 0%,#b6bbb8 50%,#c7b9aa 76%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg,  #405f6f 0%,#b6bbb8 50%,#c7b9aa 76%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg,  #405f6f 0%,#b6bbb8 50%,#c7b9aa 76%); /* IE10+ */
+    background: linear-gradient(45deg,  #405f6f 0%,#b6bbb8 50%,#c7b9aa 76%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#405f6f', endColorstr='#c7b9aa',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
 }
 
 body>.container{
@@ -8,10 +15,19 @@ body>.container{
     margin: 40px auto;
     border-radius: 4px;
 }
+.container{
+    width: 1080px;
+}
 
 header.navbar{
     height: 70px;
     min-height: 70px;
+}
+header.navbar .container{
+    padding: 0 30px;
+}
+.navbar-form{
+    padding-top: 10px;
 }
 header.navbar .navbar-nav>li>a{
     line-height: 40px;
@@ -32,16 +48,69 @@ header.navbar .navbar-nav>li>a{
     margin: 0;
 }
 .navbar-inverse .navbar-nav>li>a{
-    line-height: 60px;
+    line-height: 35px;
     color: #848e92;
+    font-size: 16px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.navbar-inverse .navbar-nav>li>a .glyphicon{
+    font-size: 20px;
+    line-height: 20px;
+    display: block;
+    text-align: center;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
     color: #fff !important;
 }
+
 
 .row{
     margin: 0;
 }
 .sidebar{
     background: #edf1f2;
+}
+
+
+
+.heading-image{
+    height: 170px;
+    background-position: center center;
+}
+.heading-image h1{
+    margin: 0;
+    padding: 35px 0 0 30px;
+    color: #fff;
+    font-size: 60px;
+}
+.heading-image .coordinates{
+    margin: 0;
+    padding: 15px 0 0 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+h2{
+    text-transform: uppercase;
+}
+.col-md-9{
+    padding: 0 30px;
+}
+
+.icons_blue.white_blue.default.locale__ru{
+    width: 100% !important;
+}
+
+.navbar-nav.navbar-right:last-child{
+    margin-right: 0;
+}
+
+footer{
+    background: #2c353a;
+}
+
+.well{
+    background: #fff;
 }

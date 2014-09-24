@@ -2,27 +2,27 @@
 /**
  * Created by JetBrains PhpStorm.
  * User: dimitry
- * Date: 5/12/14
- * Time: 4:59 PM
+ * Date: 9/24/14
+ * Time: 8:00 PM
  * To change this template use File | Settings | File Templates.
  */
 
-class Cities extends CActiveRecord {
+class Places extends CActiveRecord {
 
     public function tableName()
     {
-        return "cities";
+        return "places";
     }
 
     public function primaryKey()
     {
-        return "cityId";
+        return "placeId";
     }
 
     public function rules()
     {
         return array(
-
+            array('name, alias', 'required'),
         );
     }
 

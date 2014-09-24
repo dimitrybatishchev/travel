@@ -16,7 +16,7 @@ class Countries extends CActiveRecord {
 
     public function primaryKey()
     {
-        return "country_id";
+        return "countryId";
     }
 
     public function rules()
