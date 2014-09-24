@@ -31,17 +31,9 @@ class CitiesController extends AdminController {
 
         if(isset($_POST['Cities']))
         {
-            /*
-            $model->attributes = Yii::app()->request->getPost('Clients');
-
-            $uploadedImage = CUploadedFile::getInstance($model, 'image');
-            $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
-            $model->image = $filename;
-            */
-
+            $model->attributes = Yii::app()->request->getPost('Cities');
 
             if($model->save()){
-                //$uploadedImage->saveAs('images/' . $filename);
                 $this->redirect(array('index'));
             }
         }

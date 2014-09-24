@@ -25,17 +25,9 @@ class CountriesController extends AdminController
 
         if(isset($_POST['Countries']))
         {
-            /*
-            $model->attributes = Yii::app()->request->getPost('Clients');
-
-            $uploadedImage = CUploadedFile::getInstance($model, 'image');
-            $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
-            $model->image = $filename;
-            */
-
+            $model->attributes = Yii::app()->request->getPost('Countries');
 
             if($model->save()){
-                //$uploadedImage->saveAs('images/' . $filename);
                 $this->redirect(array('index'));
             }
         }
@@ -49,7 +41,7 @@ class CountriesController extends AdminController
         if(!$id)
             throw New Exception('Ошибка! Неверное значение идентификатора страны');
 
-        $model = Clients::model()->findByPk($id);
+        $model = Countries::model()->findByPk($id);
 
         if(isset($_POST['Countries']))
         {

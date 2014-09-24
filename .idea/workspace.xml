@@ -2,26 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a998ea9-6138-45b1-8f97-3fd655537d39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DestinationsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/RestaurantsController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/CityClosestCities.php" afterPath="$PROJECT_DIR$/protected/models/CityClosestCities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/CityImages.php" afterPath="$PROJECT_DIR$/protected/models/CityImages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/CountryImages.php" afterPath="$PROJECT_DIR$/protected/models/CountryImages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Destinations.php" afterPath="$PROJECT_DIR$/protected/models/Destinations.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/EventImages.php" afterPath="$PROJECT_DIR$/protected/models/EventImages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Events.php" afterPath="$PROJECT_DIR$/protected/models/Events.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Images.php" afterPath="$PROJECT_DIR$/protected/models/Images.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/RestaurantImages.php" afterPath="$PROJECT_DIR$/protected/models/RestaurantImages.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Restaurants.php" afterPath="$PROJECT_DIR$/protected/models/Restaurants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/destinations/form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/events/form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/places/form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/restaurants/form.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/destinations/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/events/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/places/index.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/themes/main/views/admin/restaurants/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/CitiesController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/CitiesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/CountriesController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/CountriesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/DestinationsController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/DestinationsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/modules/admin/controllers/RestaurantsController.php" afterPath="$PROJECT_DIR$/protected/modules/admin/controllers/RestaurantsController.php" />
     </list>
     <ignored path="travel.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411572657377" ignored="false" />
     <file path="/main.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411493920894" ignored="false" />
-    <file path="/CountriesController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1399901258684" ignored="false" />
+    <file path="/CountriesController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576721448" ignored="false" />
     <file path="/form.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411458015177" ignored="false" />
     <file path="/index.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411457982675" ignored="false" />
     <file path="/CitiesController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411458638166" ignored="false" />
@@ -31,10 +31,11 @@
     <file path="/postEdit.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411538725780" ignored="false" />
     <file path="/m140924_153125_new_entities.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411574154070" ignored="false" />
     <file path="/m140924_160101_new_entities.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411575643861" ignored="false" />
-    <file path="/PlacesController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576046647" ignored="false" />
-    <file path="/EventsController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576061850" ignored="false" />
-    <file path="/DestinationsController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576076572" ignored="false" />
+    <file path="/PlacesController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576887688" ignored="false" />
+    <file path="/EventsController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576774816" ignored="false" />
+    <file path="/DestinationsController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576735741" ignored="false" />
     <file path="/CityClosestCities.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576092780" ignored="false" />
+    <file path="/RestaurantsController.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411576903884" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,13 +72,7 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/models/Cities.php" />
-        <option value="$PROJECT_DIR$/protected/models/Countries.php" />
-        <option value="$PROJECT_DIR$/protected/models/Places.php" />
         <option value="$PROJECT_DIR$/protected/migrations/m140924_160101_new_entities.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DestinationsController.php" />
         <option value="$PROJECT_DIR$/protected/models/Destinations.php" />
         <option value="$PROJECT_DIR$/protected/models/CityClosestCities.php" />
         <option value="$PROJECT_DIR$/protected/models/CityImages.php" />
@@ -87,6 +82,12 @@
         <option value="$PROJECT_DIR$/protected/models/Images.php" />
         <option value="$PROJECT_DIR$/protected/models/RestaurantImages.php" />
         <option value="$PROJECT_DIR$/protected/models/Restaurants.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/DestinationsController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CitiesController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/RestaurantsController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php" />
+        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CountriesController.php" />
       </list>
     </option>
   </component>
@@ -151,7 +152,271 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="restaurants" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="places" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="events" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="destinations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="themes" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cities" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="modules" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -223,11 +488,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/themes/main/views/admin/restaurants" />
+      <recent name="$PROJECT_DIR$/themes/main/views/admin/places" />
+      <recent name="$PROJECT_DIR$/themes/main/views/admin/events" />
+      <recent name="$PROJECT_DIR$/themes/main/views/admin/destinations" />
       <recent name="$PROJECT_DIR$/content/cities/hong-kong" />
-      <recent name="$PROJECT_DIR$/themes/main/views/admin/cities" />
-      <recent name="$PROJECT_DIR$/themes/main/views/admin" />
-      <recent name="$PROJECT_DIR$/protected/modules/admin/components" />
-      <recent name="$PROJECT_DIR$/protected/modules/admin/controllers" />
     </key>
   </component>
   <component name="RunManager">
@@ -336,83 +601,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="187" selection-end="187" vertical-scroll-proportion="0.07964602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="22" selection-start="187" selection-end="187" vertical-scroll-proportion="0.07964602">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/DestinationsController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="1" selection-start="198" selection-end="198" vertical-scroll-proportion="0.13274336">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Cities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Countries.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Places.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/CityClosestCities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="376" selection-end="376" vertical-scroll-proportion="0.37168142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/CityImages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="355" selection-end="355" vertical-scroll-proportion="0.34513274">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/CountryImages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="5" selection-start="364" selection-end="364" vertical-scroll-proportion="0.34513274">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Destinations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="0" selection-start="284" selection-end="284" vertical-scroll-proportion="0.23893805">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/EventImages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="4" selection-start="363" selection-end="363" vertical-scroll-proportion="0.37168142">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Events.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="0" selection-start="344" selection-end="344" vertical-scroll-proportion="0.37168142">
@@ -444,6 +632,83 @@
     <entry file="file://$PROJECT_DIR$/protected/models/Restaurants.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="19" column="5" selection-start="358" selection-end="358" vertical-scroll-proportion="0.34513274">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/SignController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/CountriesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="27" column="72" selection-start="750" selection-end="750" vertical-scroll-proportion="0.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/CitiesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="69" selection-start="885" selection-end="885" vertical-scroll-proportion="-16.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="69" selection-start="875" selection-end="875" vertical-scroll-proportion="-0.1388889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="30" selection-start="1427" selection-end="1427" vertical-scroll-proportion="1.3333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/RestaurantsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="74" selection-start="1448" selection-end="1448" vertical-scroll-proportion="1.0265486">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/modules/admin/controllers/DestinationsController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="43" column="5" selection-start="1126" selection-end="1126" vertical-scroll-proportion="0.123893805">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/destinations/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/events/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/places/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/restaurants/form.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.31858408">
           <folding />
         </state>
       </provider>
