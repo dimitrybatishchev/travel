@@ -31,5 +31,4 @@ class Destinations extends CActiveRecord {
         return parent::model($className);
     }
 
-
 }

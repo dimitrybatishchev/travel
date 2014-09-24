@@ -7,6 +7,21 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class Images {
+class Images extends CActiveRecord {
+
+    public function tableName()
+    {
+        return "images";
+    }
+
+    public function primaryKey()
+    {
+        return "imageId";
+    }
+
+    static public function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
 
 }

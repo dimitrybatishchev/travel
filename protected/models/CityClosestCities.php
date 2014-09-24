@@ -7,6 +7,21 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class CityClosestCities {
+class CityClosestCities extends CActiveRecord {
+
+    public function tableName()
+    {
+        return "cityClosestCities";
+    }
+
+    public function primaryKey()
+    {
+        return "closestCityId";
+    }
+
+    static public function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
 
 }

@@ -7,6 +7,21 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class Restaurants {
+class Restaurants extends CActiveRecord {
+
+    public function tableName()
+    {
+        return "restaurants";
+    }
+
+    public function primaryKey()
+    {
+        return "restaurantId";
+    }
+
+    static public function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
 
 }

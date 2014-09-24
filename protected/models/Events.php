@@ -7,6 +7,21 @@
  * To change this template use File | Settings | File Templates.
  */
 
-class Events {
+class Events extends CActiveRecord {
+
+    public function tableName()
+    {
+        return "events";
+    }
+
+    public function primaryKey()
+    {
+        return "eventId";
+    }
+
+    static public function model($className = __CLASS__)
+    {
+        return parent::model($className);
+    }
 
 }
