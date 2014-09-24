@@ -22,7 +22,8 @@ class Cities extends CActiveRecord {
     public function rules()
     {
         return array(
-
+            array('name, alias, relatedCountryId', 'required'),
+            array('shortDescription, fullDescription', 'safe'),
         );
     }
 

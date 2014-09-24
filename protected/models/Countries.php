@@ -22,7 +22,8 @@ class Countries extends CActiveRecord {
     public function rules()
     {
         return array(
-            array('name', 'required'),
+            array('name, alias', 'required'),
+            array('relatedDestinationId, shortDescription, fullDescription', 'safe'),
         );
     }
 

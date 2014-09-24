@@ -13,10 +13,14 @@
     <tbody>
         <?php $count = count($cities); for($i = 0; $i < $count; $i++){ ?>
             <tr>
-                <td><?php echo $cities[$i]->country_id; ?></td>
+                <td><?php echo $cities[$i]->cityId; ?></td>
                 <td><?php echo $cities[$i]->name; ?></td>
-                <td>
-                    <i><a href="/admin/cities/update?id=<?php echo $cities[$i]->cityId; ?>">Редактировать</a></i>
+                <td style="text-align: right;">
+                    <a href="/admin/cities/update?id=<?php echo $cities[$i]->cityId; ?>">Редактировать</a>
+                    <form method="POST" action="/admin/cities/delete" style="display:inline-block;">
+                        <input type="hidden" name="id" value="<?= $cities[$i]->cityId; ?>">
+                        <input type="submit" value="Удалить" class="btn btn-danger btn-xs">
+                    </form>
                 </td>
             </tr>
         <? } ?>
