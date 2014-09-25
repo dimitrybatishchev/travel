@@ -71,16 +71,21 @@
                     <th>Картинка</th>
                     <th>Название</th>
                     <th>Источник</th>
+                    <th></th>
                 </tr>
             </thead>
             <tbody>
             <? foreach($model->images as $image): ?>
                 <tr>
                     <td>
+                        <input type="hidden" name="AddedImages[]" value="<?= $image->placeImageId ?>">
                         <img style="height: 28px" src="/content/places/<?= $image->image->original ?>">
                     </td>
                     <td></td>
                     <td></td>
+                    <td style="text-align: right;">
+                        <a href="#" class="js-image-delete">Удалить</a>
+                    </td>
                 </tr>
             <? endforeach; ?>
             </tbody>
@@ -119,9 +124,14 @@
             e.preventDefault();
 
             var html = '';
-            html += '<tr><td colspan="3"><input type="file" name="Images[]"></td></tr>';
+            html += '<tr><td colspan="4"><input type="file" name="Images[]"></td></tr>';
 
             $('.js-images tbody').append(html);
+        });
+        $('.js-image-delete').click(function(e){
+            e.preventDefault();
+
+            $(this).closest('tr').remove();
         });
     });
 </script>
