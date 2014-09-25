@@ -22,8 +22,8 @@ class Cities extends CActiveRecord {
     public function rules()
     {
         return array(
-            array('name, alias, relatedCountryId', 'required'),
-            array('shortDescription, fullDescription', 'safe'),
+            array('name, relatedCountryId', 'required'),
+            array('shortDescription, fullDescription, alias', 'safe'),
         );
     }
 
@@ -34,7 +34,7 @@ class Cities extends CActiveRecord {
 
     public function beforeSave(){
         if(!$this->alias){
-            $this->alias = Translit::translate($this->title);
+            $this->alias = Translit::translate($this->name);
         }
         return true;
     }

@@ -26,7 +26,7 @@ class Restaurants extends CActiveRecord {
 
     public function beforeSave(){
         if(!$this->alias){
-            $this->alias = Translit::translate($this->title);
+            $this->alias = Translit::translate($this->name);
         }
         return true;
     }

@@ -22,8 +22,8 @@ class Places extends CActiveRecord {
     public function rules()
     {
         return array(
-            array('name, alias', 'required'),
-            array('shortDescription, fullDescription, relatedCityId, relatedCountryId, price, timeToVisit, rating', 'safe'),
+            array('name', 'required'),
+            array('alias, shortDescription, fullDescription, relatedCityId, relatedCountryId, price, timeToVisit, rating', 'safe'),
         );
     }
 
@@ -34,7 +34,7 @@ class Places extends CActiveRecord {
 
     public function beforeSave(){
         if(!$this->alias){
-            $this->alias = Translit::translate($this->title);
+            $this->alias = Translit::translate($this->name);
         }
         return true;
     }

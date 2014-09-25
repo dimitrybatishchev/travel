@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a998ea9-6138-45b1-8f97-3fd655537d39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/helpers/Translit.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Cities.php" afterPath="$PROJECT_DIR$/protected/models/Cities.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Countries.php" afterPath="$PROJECT_DIR$/protected/models/Countries.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Destinations.php" afterPath="$PROJECT_DIR$/protected/models/Destinations.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Events.php" afterPath="$PROJECT_DIR$/protected/models/Events.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Museums.php" afterPath="$PROJECT_DIR$/protected/models/Museums.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Places.php" afterPath="$PROJECT_DIR$/protected/models/Places.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Restaurants.php" afterPath="$PROJECT_DIR$/protected/models/Restaurants.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/config/main.php" afterPath="$PROJECT_DIR$/protected/config/main.php" />
     </list>
     <ignored path="travel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -35,6 +33,7 @@
     <file path="/m140924_171032_utf.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411578964977" ignored="false" />
     <file path="/m140925_061044_dates_in_places_fix.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411625456606" ignored="false" />
     <file path="/Cities.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411626439459" ignored="false" />
+    <file path="/Places.php" changelist="6a998ea9-6138-45b1-8f97-3fd655537d39" time="1411626585973" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +70,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/migrations/m140924_172748_cities_alias.php" />
         <option value="$PROJECT_DIR$/themes/main/views/admin/cities/index.php" />
         <option value="$PROJECT_DIR$/protected/migrations/m140925_060004_museums.php" />
         <option value="$PROJECT_DIR$/protected/migrations/m140925_061044_dates_in_places_fix.php" />
@@ -80,12 +78,13 @@
         <option value="$PROJECT_DIR$/themes/main/views/admin/layouts/main.php" />
         <option value="$PROJECT_DIR$/themes/main/views/admin/places/form.php" />
         <option value="$PROJECT_DIR$/themes/main/views/admin/places/index.php" />
+        <option value="$PROJECT_DIR$/protected/models/Museums.php" />
+        <option value="$PROJECT_DIR$/protected/config/main.php" />
+        <option value="$PROJECT_DIR$/protected/models/Places.php" />
         <option value="$PROJECT_DIR$/protected/models/Cities.php" />
         <option value="$PROJECT_DIR$/protected/models/Countries.php" />
         <option value="$PROJECT_DIR$/protected/models/Destinations.php" />
         <option value="$PROJECT_DIR$/protected/models/Events.php" />
-        <option value="$PROJECT_DIR$/protected/models/Museums.php" />
-        <option value="$PROJECT_DIR$/protected/models/Places.php" />
         <option value="$PROJECT_DIR$/protected/models/Restaurants.php" />
       </list>
     </option>
@@ -417,6 +416,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="travel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="protected" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -562,13 +579,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/cities/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="508" selection-end="535" vertical-scroll-proportion="0.45132744">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/migrations/m140924_171032_utf.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="0" selection-start="520" selection-end="736" vertical-scroll-proportion="0.26548672">
@@ -625,34 +635,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Cities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="0" selection-start="658" selection-end="817" vertical-scroll-proportion="-17.5">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Countries.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="831" selection-end="831" vertical-scroll-proportion="-21.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Destinations.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="755" selection-end="755" vertical-scroll-proportion="-20.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/models/Events.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="0" selection-start="617" selection-end="617" vertical-scroll-proportion="-16.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Museums.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="32" column="0" selection-start="621" selection-end="621" vertical-scroll-proportion="-16.25">
@@ -660,16 +642,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/protected/config/main.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="28" selection-start="293" selection-end="293" vertical-scroll-proportion="-5.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Cities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="59" selection-start="516" selection-end="516" vertical-scroll-proportion="0.45840707">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Countries.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="81" selection-start="529" selection-end="529" vertical-scroll-proportion="0.4159292">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="5" selection-start="311" selection-end="311" vertical-scroll-proportion="0.2920354">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Places.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="862" selection-end="862" vertical-scroll-proportion="-20.708334">
+        <state line="25" column="131" selection-start="452" selection-end="571" vertical-scroll-proportion="0.4456522">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/protected/models/Restaurants.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="32" column="4" selection-start="636" selection-end="636" vertical-scroll-proportion="0.6902655">
+        <state line="31" column="5" selection-start="630" selection-end="630" vertical-scroll-proportion="0.6637168">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Destinations.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="23" selection-start="442" selection-end="442" vertical-scroll-proportion="0.4159292">
           <folding />
         </state>
       </provider>

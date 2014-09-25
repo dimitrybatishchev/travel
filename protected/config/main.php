@@ -7,6 +7,7 @@ return array(
     'theme'                 => 'main',
     'import' => array(
         'application.models.*',
+        'application.helpers.*',
     ),
     'modules' => array(
         "main",

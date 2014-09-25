@@ -22,7 +22,7 @@ class Destinations extends CActiveRecord {
     public function rules()
     {
         return array(
-            array('name, alias', 'required'),
+            array('name', 'required'),
         );
     }
 
@@ -33,7 +33,7 @@ class Destinations extends CActiveRecord {
 
     public function beforeSave(){
         if(!$this->alias){
-            $this->alias = Translit::translate($this->title);
+            $this->alias = Translit::translate($this->name);
         }
         return true;
     }
