@@ -112,7 +112,7 @@ class RestaurantsController extends AdminController {
                         }
                     }
                 }
-                
+
                 $this->redirect(array('index'));
             }
         }

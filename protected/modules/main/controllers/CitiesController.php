@@ -9,7 +9,7 @@
 
 class CitiesController extends CController {
 
-    public $layout = "//main/layouts/main";
+    public $layout = "//main/layouts/cities";
 
     public function actionIndex(){
         $this->render('index');

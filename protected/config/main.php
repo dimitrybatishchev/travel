@@ -22,6 +22,7 @@ return array(
                 '/travel/<destinationAlias>'                            => 'main/destinations/destinationDetails',
                 '/travel/<destinationAlias>/<countryAlias>'             => 'main/countries/countryDetails',
                 '/travel/<destinationAlias>/<countryAlias>/<cityAlias>' => 'main/cities/cityDetails',
+                '/' => 'main/site/index',
             ),
         ),
         'db' => array(
