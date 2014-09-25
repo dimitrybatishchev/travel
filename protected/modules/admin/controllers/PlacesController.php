@@ -34,15 +34,24 @@ class PlacesController extends AdminController {
             $model->attributes = Yii::app()->request->getPost('Places');
 
             if($model->save()){
-                $images = Yii::app()->request->getPost('Images');
-                foreach($images as $image){
-                    if(!isset($image['id'])){
-                        $uploadedImage = CUploadedFile::getInstance($image, 'file');
+                if(isset($_POST['AddedImages'])){
+                    $addedImages = Yii::app()->request->getPost('AddedImages');
+
+                    foreach($model->images as $oldImage){
+                        if (!in_array($oldImage->placeImageId, $addedImages)){
+                            $oldImage->delete();
+                        }
+                    }
+                }
+
+                if (isset($_FILES['Images'])){
+                    for($i=0; $i < count($_FILES['Images']['name']); $i++) {
+                        $uploadedImage = CUploadedFile::getInstanceByName("Images[$i]");
                         if ($uploadedImage){
                             $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
 
                             $image = new Images();
-                            $image->origanal = $filename;
+                            $image->original = $filename;
                             $image->save();
 
                             $placeImage = new PlacesImages();
@@ -50,7 +59,7 @@ class PlacesController extends AdminController {
                             $placeImage->relatedImageId = $image->imageId;
                             $placeImage->save();
 
-                            $uploadedImage->saveAs('content/places' . $filename);
+                            $uploadedImage->saveAs('content/places/' . $filename);
                         }
                     }
                 }
@@ -74,6 +83,7 @@ class PlacesController extends AdminController {
         {
             $model->attributes = Yii::app()->request->getPost('Places');
             if($model->save()){
+
                 if(isset($_POST['AddedImages'])){
                     $addedImages = Yii::app()->request->getPost('AddedImages');
 
