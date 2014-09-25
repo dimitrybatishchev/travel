@@ -32,4 +32,11 @@ class Places extends CActiveRecord {
         return parent::model($className);
     }
 
+    public function beforeSave(){
+        if(!$this->alias){
+            $this->alias = Translit::translate($this->title);
+        }
+        return true;
+    }
+
 }
