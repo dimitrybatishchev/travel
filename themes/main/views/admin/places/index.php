@@ -16,7 +16,7 @@
                 <td><?php echo $places[$i]->placeId; ?></td>
                 <td><?php echo $places[$i]->name; ?></td>
                 <td>
-                    <a href="/admin/places/update?id=<?php echo $places[$i]->cityId; ?>">Редактировать</a>
+                    <a href="/admin/places/update?id=<?php echo $places[$i]->placeId; ?>">Редактировать</a>
                     <form method="POST" action="/admin/places/delete" style="display:inline-block;">
                         <input type="hidden" name="id" value="<?= $places[$i]->placeId; ?>">
                         <input type="submit" value="Удалить" class="btn btn-danger btn-xs">
