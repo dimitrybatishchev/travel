@@ -34,6 +34,36 @@ class RestaurantsController extends AdminController {
             $model->attributes = Yii::app()->request->getPost('Restaurants');
 
             if($model->save()){
+                if(isset($_POST['AddedImages'])){
+                    $addedImages = Yii::app()->request->getPost('AddedImages');
+
+                    foreach($model->images as $oldImage){
+                        if (!in_array($oldImage->restaurantImageId, $addedImages)){
+                            $oldImage->delete();
+                        }
+                    }
+                }
+
+                if (isset($_FILES['Images'])){
+                    for($i=0; $i < count($_FILES['Images']['name']); $i++) {
+                        $uploadedImage = CUploadedFile::getInstanceByName("Images[$i]");
+                        if ($uploadedImage){
+                            $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
+
+                            $image = new Images();
+                            $image->original = $filename;
+                            $image->save();
+
+                            $placeImage = new RestaurantImages();
+                            $placeImage->relatedRestaurantId = $model->restaurantId;
+                            $placeImage->relatedImageId = $image->imageId;
+                            $placeImage->save();
+
+                            $uploadedImage->saveAs('content/restaurants/' . $filename);
+                        }
+                    }
+                }
+
                 $this->redirect(array('index'));
             }
         }
@@ -52,8 +82,39 @@ class RestaurantsController extends AdminController {
         if(isset($_POST['Restaurants']))
         {
             $model->attributes = Yii::app()->request->getPost('Restaurants');
-            if($model->save())
+            if($model->save()){
+                if(isset($_POST['AddedImages'])){
+                    $addedImages = Yii::app()->request->getPost('AddedImages');
+
+                    foreach($model->images as $oldImage){
+                        if (!in_array($oldImage->restaurantImageId, $addedImages)){
+                            $oldImage->delete();
+                        }
+                    }
+                }
+
+                if (isset($_FILES['Images'])){
+                    for($i=0; $i < count($_FILES['Images']['name']); $i++) {
+                        $uploadedImage = CUploadedFile::getInstanceByName("Images[$i]");
+                        if ($uploadedImage){
+                            $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
+
+                            $image = new Images();
+                            $image->original = $filename;
+                            $image->save();
+
+                            $placeImage = new RestaurantImages();
+                            $placeImage->relatedRestaurantId = $model->restaurantId;
+                            $placeImage->relatedImageId = $image->imageId;
+                            $placeImage->save();
+
+                            $uploadedImage->saveAs('content/restaurants/' . $filename);
+                        }
+                    }
+                }
+                
                 $this->redirect(array('index'));
+            }
         }
 
         $this->render('form', array(

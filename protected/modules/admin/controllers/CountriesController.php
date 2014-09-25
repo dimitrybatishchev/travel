@@ -28,6 +28,36 @@ class CountriesController extends AdminController
             $model->attributes = Yii::app()->request->getPost('Countries');
 
             if($model->save()){
+                if(isset($_POST['AddedImages'])){
+                    $addedImages = Yii::app()->request->getPost('AddedImages');
+
+                    foreach($model->images as $oldImage){
+                        if (!in_array($oldImage->countryImageId, $addedImages)){
+                            $oldImage->delete();
+                        }
+                    }
+                }
+
+                if (isset($_FILES['Images'])){
+                    for($i=0; $i < count($_FILES['Images']['name']); $i++) {
+                        $uploadedImage = CUploadedFile::getInstanceByName("Images[$i]");
+                        if ($uploadedImage){
+                            $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
+
+                            $image = new Images();
+                            $image->original = $filename;
+                            $image->save();
+
+                            $placeImage = new CountriesImages();
+                            $placeImage->relatedCountryId = $model->countryId;
+                            $placeImage->relatedImageId = $image->imageId;
+                            $placeImage->save();
+
+                            $uploadedImage->saveAs('content/countries/' . $filename);
+                        }
+                    }
+                }
+
                 $this->redirect(array('index'));
             }
         }

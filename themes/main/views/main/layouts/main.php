@@ -73,6 +73,11 @@
                 <ul class="nav navbar-nav">
                     <li>
                         <a href="#">
+                            <span class="glyphicon glyphicon-question-sign"></span> Информация
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <span class="glyphicon glyphicon-camera"></span> Фотографии
                         </a>
                     </li>
@@ -93,6 +98,11 @@
                     </li>
                     <li>
                         <a href="#">
+                            <span class="glyphicon glyphicon-shopping-cart"></span> Покупки
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <span class="glyphicon glyphicon-book"></span> Музеи
                         </a>
                     </li>
@@ -106,7 +116,7 @@
         </div><!-- /.container-fluid -->
     </nav>
 
-    <div class="row" style="background: #edf1f2">
+    <div class="row">
         <div class="heading-image" style="background-image: url('/content/cities/hong-kong/background.jpg'); background-position: center -219px;">
             <h1>Гонконг</h1>
             <div class="coordinates">22.1707° N, 114.0927° W</div>

@@ -37,6 +37,37 @@
             <?php echo $form->textArea($model,'fullDescription', array('class'=>'redactor')); ?>
         </div>
     </div>
+<div class="form-group <?if($form->error($model,'images')):?>has-error<? endif; ?>">
+    <label class="col-sm-2 control-label">Картинки</label>
+    <div class="col-sm-10">
+        <table class="js-images admin-images-list table table-bordered table-striped">
+            <thead>
+            <tr>
+                <th>Картинка</th>
+                <th>Название</th>
+                <th>Источник</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <? foreach($model->images as $image): ?>
+                <tr>
+                    <td>
+                        <input type="hidden" name="AddedImages[]" value="<?= $image->countryImageId ?>">
+                        <img style="height: 28px" src="/content/countries/<?= $image->image->original ?>">
+                    </td>
+                    <td></td>
+                    <td></td>
+                    <td style="text-align: right;">
+                        <a href="#" class="js-image-delete">Удалить</a>
+                    </td>
+                </tr>
+            <? endforeach; ?>
+            </tbody>
+        </table>
+        <a href="#" id="add-image">Добавить новую</a>
+    </div>
+</div>
     <div class="form-group">
         <div class="col-sm-2"></div>
         <div class="col-sm-10">
@@ -58,5 +89,24 @@
     $(function()
     {
         $('.redactor').redactor();
+    });
+</script>
+
+<script type="text/javascript">
+    $(function()
+    {
+        $('#add-image').click(function(e){
+            e.preventDefault();
+
+            var html = '';
+            html += '<tr><td colspan="4"><input type="file" name="Images[]"></td></tr>';
+
+            $('.js-images tbody').append(html);
+        });
+        $('.js-image-delete').click(function(e){
+            e.preventDefault();
+
+            $(this).closest('tr').remove();
+        });
     });
 </script>
