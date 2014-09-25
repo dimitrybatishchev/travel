@@ -48,7 +48,10 @@
                     <a href="/admin/cities/index">Города</a>
                 </li>
                 <li>
-                    <a href="/admin/attractions/index">Достопримечательности</a>
+                    <a href="/admin/places/index">Достопримечательности</a>
+                </li>
+                <li>
+                    <a href="/admin/events/index">События</a>
                 </li>
             </ul>
         </div>

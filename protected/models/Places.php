@@ -23,6 +23,7 @@ class Places extends CActiveRecord {
     {
         return array(
             array('name, alias', 'required'),
+            array('shortDescription, fullDescription, relatedCityId, relatedCountryId, price, timeToVisit, rating', 'safe'),
         );
     }
 

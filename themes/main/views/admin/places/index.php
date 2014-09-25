@@ -1,5 +1,5 @@
-<h1>Города</h1>
-<a href="/admin/cities/create" class="btn btn-default">Создать</a>
+<h1>Достопримечательности</h1>
+<a href="/admin/places/create" class="btn btn-default">Создать</a>
 <br/>
 <br/>
 <table class="table table-bordered table-striped">
@@ -11,12 +11,16 @@
         </tr>
     </thead>
     <tbody>
-        <?php $count = count($cities); for($i = 0; $i < $count; $i++){ ?>
+        <?php $count = count($places); for($i = 0; $i < $count; $i++){ ?>
             <tr>
-                <td><?php echo $cities[$i]->country_id; ?></td>
-                <td><?php echo $cities[$i]->name; ?></td>
+                <td><?php echo $places[$i]->placeId; ?></td>
+                <td><?php echo $places[$i]->name; ?></td>
                 <td>
-                    <i><a href="/admin/cities/update?id=<?php echo $cities[$i]->cityId; ?>">Редактировать</a></i>
+                    <a href="/admin/places/update?id=<?php echo $places[$i]->cityId; ?>">Редактировать</a>
+                    <form method="POST" action="/admin/places/delete" style="display:inline-block;">
+                        <input type="hidden" name="id" value="<?= $places[$i]->placeId; ?>">
+                        <input type="submit" value="Удалить" class="btn btn-danger btn-xs">
+                    </form>
                 </td>
             </tr>
         <? } ?>
