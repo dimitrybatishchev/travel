@@ -74,10 +74,9 @@ class PlacesController extends AdminController {
         {
             $model->attributes = Yii::app()->request->getPost('Places');
             if($model->save()){
-                $images = $_FILES['Images'];
-                foreach($images as $index => $image){
-                    if(!isset($image['id'])){
-                        $uploadedImage = CUploadedFile::getInstanceByName('Images[0][file]');
+                if (isset($_FILES['Images'])){
+                    for($i=0; $i < count($_FILES['Images']['name']); $i++) {
+                        $uploadedImage = CUploadedFile::getInstanceByName("Images[$i]");
                         if ($uploadedImage){
                             $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
 
