@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6a998ea9-6138-45b1-8f97-3fd655537d39" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/vendors/css/redactor.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static/vendors/js/redactor.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Cities.php" afterPath="$PROJECT_DIR$/protected/models/Cities.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/protected/models/Countries.php" afterPath="$PROJECT_DIR$/protected/models/Countries.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/main/views/admin/cities/form.php" afterPath="$PROJECT_DIR$/themes/main/views/admin/cities/form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/main/views/admin/countries/form.php" afterPath="$PROJECT_DIR$/themes/main/views/admin/countries/form.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/main/views/admin/cities/index.php" afterPath="$PROJECT_DIR$/themes/main/views/admin/cities/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/themes/main/views/admin/layouts/main.php" afterPath="$PROJECT_DIR$/themes/main/views/admin/layouts/main.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/protected/models/Museums.php" />
     </list>
     <ignored path="travel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,29 +43,7 @@
     <favorites_list name="travel" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/themes/main/views/admin/cities/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="83" selection-start="828" selection-end="828" vertical-scroll-proportion="0.53097343">
-              <folding>
-                <element signature="e#509#535#0" expanded="true" />
-                <element signature="e#714#743#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/themes/main/views/admin/countries/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="46" selection-start="510" selection-end="536" vertical-scroll-proportion="-3.125">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -91,8 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CitiesController.php" />
-        <option value="$PROJECT_DIR$/protected/modules/admin/controllers/PlacesController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/RestaurantsController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/EventsController.php" />
         <option value="$PROJECT_DIR$/protected/modules/admin/controllers/CountriesController.php" />
@@ -107,6 +75,8 @@
         <option value="$PROJECT_DIR$/protected/migrations/m140924_172748_cities_alias.php" />
         <option value="$PROJECT_DIR$/protected/models/Cities.php" />
         <option value="$PROJECT_DIR$/themes/main/views/admin/cities/index.php" />
+        <option value="$PROJECT_DIR$/protected/migrations/m140925_060004_museums.php" />
+        <option value="$PROJECT_DIR$/protected/models/Museums.php" />
       </list>
     </option>
   </component>
@@ -359,24 +329,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="travel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="protected" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="migrations" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
@@ -440,13 +392,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28297362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.28297362" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -522,27 +474,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/places/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/restaurants/form.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.31858408">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/migrations/m140924_165137_countries_description.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="98" selection-end="177" vertical-scroll-proportion="-3.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/static/vendors/js/redactor.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -560,13 +491,6 @@
     <entry file="file://$PROJECT_DIR$/themes/main/views/admin/layouts/main.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="48" selection-start="1143" selection-end="1143" vertical-scroll-proportion="0.53097343">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/protected/migrations/m140924_160101_new_entities.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="796" selection-end="874" vertical-scroll-proportion="0.40942028">
           <folding />
         </state>
       </provider>
@@ -620,13 +544,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/countries/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="46" selection-start="510" selection-end="536" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/themes/main/views/admin/cities/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="83" selection-start="828" selection-end="828" vertical-scroll-proportion="0.53097343">
@@ -634,6 +551,41 @@
             <element signature="e#509#535#0" expanded="true" />
             <element signature="e#714#743#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/themes/main/views/admin/countries/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="46" selection-start="510" selection-end="536" vertical-scroll-proportion="0.13274336">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/migrations/m140924_160101_new_entities.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="130" selection-end="795" vertical-scroll-proportion="0.19021739">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Events.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="0" selection-start="203" selection-end="456" vertical-scroll-proportion="-3.125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/models/Museums.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="26" selection-start="341" selection-end="341" vertical-scroll-proportion="0.31858408">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/protected/migrations/m140925_060004_museums.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="11" selection-start="696" selection-end="696" vertical-scroll-proportion="0.42477876">
+          <folding />
         </state>
       </provider>
     </entry>
