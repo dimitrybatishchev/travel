@@ -65,22 +65,27 @@
 <div class="form-group <?if($form->error($model,'images')):?>has-error<? endif; ?>">
     <label class="col-sm-2 control-label">Картинки</label>
     <div class="col-sm-10">
-        <table class="js-images">
+        <table class="js-images admin-images-list table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th></th>
+                    <th>Картинка</th>
+                    <th>Название</th>
+                    <th>Источник</th>
                 </tr>
             </thead>
             <tbody>
             <? foreach($model->images as $image): ?>
                 <tr>
+                    <td>
+                        <img style="height: 28px" src="/content/places/<?= $image->image->original ?>">
+                    </td>
+                    <td></td>
                     <td></td>
                 </tr>
             <? endforeach; ?>
             </tbody>
         </table>
-
-        <br><a href="#" id="add-image">Добавить новую</a>
+        <a href="#" id="add-image">Добавить новую</a>
     </div>
 </div>
     <div class="form-group">
@@ -114,7 +119,7 @@
             e.preventDefault();
 
             var html = '';
-            html += '<tr><td><input type="file" name="Images[]"></td></tr>';
+            html += '<tr><td colspan="3"><input type="file" name="Images[]"></td></tr>';
 
             $('.js-images tbody').append(html);
         });

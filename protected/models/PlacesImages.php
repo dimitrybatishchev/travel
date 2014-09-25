@@ -24,4 +24,10 @@ class PlacesImages extends CActiveRecord {
         return parent::model($className);
     }
 
+    public function relations(){
+        return array(
+            "image" => array(self::BELONGS_TO, "Images", "relatedImageId"),
+        );
+    }
+
 }
