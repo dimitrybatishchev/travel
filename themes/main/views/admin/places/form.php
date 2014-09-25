@@ -114,7 +114,7 @@
             e.preventDefault();
 
             var html = '';
-            html += '<tr><td><input type="file" name="images[]"></td></tr>'
+            html += '<tr><td><input type="file" name="Images[0][file]"></td></tr>'
 
             $('.js-images tbody').append(html);
         });

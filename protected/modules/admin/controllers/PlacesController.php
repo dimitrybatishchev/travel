@@ -33,12 +33,28 @@ class PlacesController extends AdminController {
         {
             $model->attributes = Yii::app()->request->getPost('Places');
 
-            $images = Yii::app()->request->getPost('Places');
-            foreach($images as $image){
-                
-            }
-
             if($model->save()){
+                $images = Yii::app()->request->getPost('Images');
+                foreach($images as $image){
+                    if(!isset($image['id'])){
+                        $uploadedImage = CUploadedFile::getInstance($image, 'file');
+                        if ($uploadedImage){
+                            $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
+
+                            $image = new Images();
+                            $image->origanal = $filename;
+                            $image->save();
+
+                            $placeImage = new PlacesImages();
+                            $placeImage->relatedPlaceId = $model->placeId;
+                            $placeImage->relatedImageId = $image->imageId;
+                            $placeImage->save();
+
+                            $uploadedImage->saveAs('content/places' . $filename);
+                        }
+                    }
+                }
+
                 $this->redirect(array('index'));
             }
         }
@@ -57,8 +73,30 @@ class PlacesController extends AdminController {
         if(isset($_POST['Places']))
         {
             $model->attributes = Yii::app()->request->getPost('Places');
-            if($model->save())
+            if($model->save()){
+                $images = $_FILES['Images'];
+                foreach($images as $index => $image){
+                    if(!isset($image['id'])){
+                        $uploadedImage = CUploadedFile::getInstanceByName('Images[0][file]');
+                        if ($uploadedImage){
+                            $filename =  md5(rand(1000,9999) . time()) . '.' . $uploadedImage->getExtensionName();
+
+                            $image = new Images();
+                            $image->original = $filename;
+                            $image->save();
+
+                            $placeImage = new PlacesImages();
+                            $placeImage->relatedPlaceId = $model->placeId;
+                            $placeImage->relatedImageId = $image->imageId;
+                            $placeImage->save();
+
+                            $uploadedImage->saveAs('content/places/' . $filename);
+                        }
+                    }
+                }
+
                 $this->redirect(array('index'));
+            }
         }
 
         $this->render('form', array(
