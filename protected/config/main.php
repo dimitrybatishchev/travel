@@ -18,7 +18,10 @@ return array(
         'urlManager'    =>array(
             'urlFormat'     =>'path',
             'rules'=>array(
-                '/city/<cityAlias>'                           => 'main/cities/cityDetails',
+                '/city/<cityAlias>'                                     => 'main/cities/cityDetails',
+                '/travel/<destinationAlias>'                            => 'main/destinations/destinationDetails',
+                '/travel/<destinationAlias>/<countryAlias>'             => 'main/countries/countryDetails',
+                '/travel/<destinationAlias>/<countryAlias>/<cityAlias>' => 'main/cities/cityDetails',
             ),
         ),
         'db' => array(

@@ -33,6 +33,11 @@ class PlacesController extends AdminController {
         {
             $model->attributes = Yii::app()->request->getPost('Places');
 
+            $images = Yii::app()->request->getPost('Places');
+            foreach($images as $image){
+                
+            }
+
             if($model->save()){
                 $this->redirect(array('index'));
             }

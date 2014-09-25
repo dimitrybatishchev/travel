@@ -27,6 +27,12 @@ class Places extends CActiveRecord {
         );
     }
 
+    public function relations(){
+        return array(
+            "images" => array(self::HAS_MANY, "PlacesImages", "relatedPlaceId"),
+        );
+    }
+
     static public function model($className = __CLASS__)
     {
         return parent::model($className);

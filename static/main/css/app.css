@@ -47,6 +47,9 @@ header.navbar .navbar-nav>li>a{
     border-radius: 0;
     margin: 0;
 }
+.navbar-inverse .navbar-nav{
+    float: none;
+}
 .navbar-inverse .navbar-nav>li>a{
     line-height: 35px;
     color: #848e92;
@@ -54,6 +57,7 @@ header.navbar .navbar-nav>li>a{
     padding-left: 30px;
     padding-right: 30px;
     padding-top: 20px;
+    text-align: center;
 }
 .navbar-inverse .navbar-nav>li>a .glyphicon{
     font-size: 20px;
@@ -63,6 +67,10 @@ header.navbar .navbar-nav>li>a{
 }
 .navbar-inverse .navbar-nav>li>a:hover{
     color: #fff !important;
+    background: #222b2f;
+}
+.navbar-inverse .navbar-nav>li{
+    width: 170px;
 }
 
 
@@ -114,3 +122,5 @@ footer{
 .well{
     background: #fff;
 }
+
+
